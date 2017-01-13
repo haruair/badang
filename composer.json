@@ -1,0 +1,19 @@
+{
+    "name": "haruair/badang",
+    "description": "Simple web framework for simple things",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "haruair",
+            "email": "onward.edkim@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Haruair\\Badang\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
