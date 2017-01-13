@@ -2,7 +2,7 @@
 
 Simple web framework for simple things.
 
-# Getting Started
+## Getting Started
 
 This is not on Packagist yet, update `composer.json` like below:
 
