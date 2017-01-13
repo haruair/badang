@@ -40,7 +40,7 @@ $app->use(function ($ctx) {
   $ctx->body = ['hello' => 'world'];
 });
 
-$app->use('Haruair\Badang\Util\JsonParser');
+$app->use('Haruair\Badang\Util\JsonResponse');
 
 $app->start();
 ?>

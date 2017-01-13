@@ -1,11 +1,11 @@
 <?php
-namespace Haruair\Badang\Util;
+namespace Haruair\Badang\Util\Response;
 
 use Haruair\Badang\MiddlewareInterface;
 use Haruair\Badang\ContextInterface;
 
 
-class JsonParser implements MiddlewareInterface {
+class JsonResponse implements MiddlewareInterface {
   public function next(ContextInterface $ctx) {
     $ctx->headers[] = 'Content-Type: application/json';
     $body = $ctx->body;
