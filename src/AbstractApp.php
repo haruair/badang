@@ -13,7 +13,7 @@ abstract class AbstractApp implements AppInterface {
    * Bind an app into the array for the processing
    * @param  \Closure|Badang\MiddlewareInterface|\string $app
    */
-  public function use($app) {
+  public function bind($app) {
     $this->apps[] = $app;
   }
 

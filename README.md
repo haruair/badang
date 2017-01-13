@@ -35,12 +35,12 @@ require_once('./vendor/autoload.php');
 use Haruair\Badang;
 $app = new Badang\App();
 
-$app->use(function ($ctx) {
+$app->bind(function ($ctx) {
   $ctx->setStatusCode(200);
   $ctx->body = ['hello' => 'world'];
 });
 
-$app->use('Haruair\Badang\Util\Response\JsonResponse');
+$app->bind('Haruair\Badang\Util\Response\JsonResponse');
 
 $app->start();
 ?>
